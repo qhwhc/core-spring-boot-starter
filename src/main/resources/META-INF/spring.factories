@@ -1,0 +1,12 @@
+#如果有多个 ，则用逗号分开
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.qhwhc.core.starter.config.ToolAutoConfiguration,\
+  com.qhwhc.core.config.DruidConfig,\
+  com.qhwhc.core.config.CorsConfig,\
+  com.qhwhc.core.config.JacksonConfig,\
+  com.qhwhc.core.config.MybatisPlusConfig,\
+  com.qhwhc.core.config.RedisConfig,\
+  com.qhwhc.core.config.Swagger2Config,\
+  com.qhwhc.core.config.ValidatorConfiguration,\
+  com.qhwhc.core.util.RedisUtil,\
+  com.qhwhc.core.websocket.WebSocket
