@@ -20,6 +20,27 @@
         <aliyun-java-sdk-core.version>3.2.3</aliyun-java-sdk-core.version>
         <aliyun-java-sdk-dysmsapi.version>1.0.0</aliyun-java-sdk-dysmsapi.version>
     </properties>
+
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <scm>
+        <url>https://github.com/qhwhc/core-spring-boot-starter</url>
+        <connection>https://github.com/qhwhc/core-spring-boot-starter.git</connection>
+    </scm>
+
+    <developers>
+        <developer>
+            <name>qhwhc</name>
+            <email>304136830@qq.com</email>
+        </developer>
+    </developers>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -197,7 +218,22 @@
                     <skip>true</skip>
                 </configuration>
             </plugin>
+            <!-- 私服上传源码 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
+
+
     </build>
     <!-- 仓库设置 -->
     <repositories>
@@ -208,4 +244,15 @@
             <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
         </repository>
     </repositories>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>oss-snapshots</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>oss-staging</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+    </distributionManagement>
 </project>
