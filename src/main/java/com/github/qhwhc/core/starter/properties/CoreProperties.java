@@ -4,7 +4,7 @@ import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 @Data
-@ConfigurationProperties(prefix = "qhwhc.tool")
-public class ToolProperties {
+@ConfigurationProperties(prefix = "qhwhc.core")
+public class CoreProperties {
     private String enable = "true";
 }
