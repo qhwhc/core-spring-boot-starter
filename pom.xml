@@ -17,7 +17,7 @@
     <properties>
         <java.version>1.8</java.version>
         <hutool.version>4.6.6</hutool.version>
-        <commons.io.version>2.5</commons.io.version>
+        <commons.io.version>2.7</commons.io.version>
         <druid.version>1.1.17</druid.version>
         <baomidou.mp.version>3.2.0</baomidou.mp.version>
         <aliyun-java-sdk-core.version>3.2.3</aliyun-java-sdk-core.version>
